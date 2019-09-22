@@ -1,0 +1,54 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='signin.css')}}">
+{% endblock %}
+
+{% block content %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+
+      <form class="form-signin" method="POST" action="/login">
+          <h2 class="text-center">Please Login</h2>
+          <hr/>
+        {{ form.hidden_tag() }}
+        {{ wtf.form_field(form.username, class='form-control', placeholder='username') }}
+        {{ wtf.form_field(form.password, class='form-control', placeholder='password') }}
+{#        {{ wtf.form_field(form.remember) }}#}
+        <button class="btn btn-secondary btn-lg btn-block submit" type="submit">Sign in</button>
+          <p><a href="#" class="text-light">Lost your password?</a></p>
+      </form>
+    <div class="text-center text-danger">
+        {% for message in get_flashed_messages() %}
+        <div class="flash">
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div>
+    </div> <!-- /container -->
+{% endblock %}

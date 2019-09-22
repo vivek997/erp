@@ -1,0 +1,68 @@
+{% extends "com_file.html" %}
+{% block body %}
+    <!-- page content -->
+    <div class="right_col" role="main">
+    <h3>University info</h3>
+
+    <table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th scope="row">Admission No.</th>
+      <td>{{ admission_no }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Name</th>
+      <td>{{ name }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Class</th>
+      <td>{{ class_name }}</td>
+    </tr>
+  <tr>
+      <th scope="row">Roll No.</th>
+      <td>{{ rollno }}</td>
+    </tr>
+  <tr>
+      <th scope="row">Application No.</th>
+      <td>{{ application_no }}</td>
+    </tr>
+  <tr>
+      <th scope="row">Department</th>
+      <td>{{ department }}</td>
+    </tr>
+  </tbody>
+</table>
+<!--table end-->
+
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">University Profile</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">University Rooms</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">University Structure</button>
+  </div>
+</div>
+<div class="btn-group btn-group-justified" role="group" aria-label="....">
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">University Departments</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">University Performance Grades</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">University Calender</button>
+  </div>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Course Registration</button>
+  </div>
+</div>
+
+
+
+
+    </div>
+{% endblock %}

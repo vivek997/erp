@@ -1,0 +1,158 @@
+{% extends "faculty/fcom_file.html" %}
+
+{% block body %}
+<div class="right_col" role="main">
+
+<form action="/f_upload_attendance" method="post">
+
+<table id="atdTable" class="table table-striped table-bordered" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1/15/FET/BCC/1/061</td>
+                <td><p id="std_name">Rajat Pandey</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="one_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="one_radio" value="Absent">Absent
+    </label>
+     </td>
+
+            </tr>
+            <tr>
+                <td>1/15/FET/BCC/1/062</td>
+                <td><p id="std_name">Anubhav Kaul</p></td>
+
+
+                <td><label class="radio-inline">
+      <input type="radio" name="two_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="two_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+            <tr>
+                <td>1/15/FET/BCC/1/063</td>
+                <td><p id="std_name">Nisha Sharma</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="three_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="three_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+            <tr>
+                <td>1/15/FET/BCC/1/064</td>
+                <td><p id="std_name">Shivam Kukreja</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="four_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="four_radio" value="Absent">Absent
+    </label></td>
+                >
+            </tr>
+            <tr>
+                <td>1/15/FET/BCC/1/065</td>
+                <td><p id="std_name">Vikas Tiwari</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="five_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="five_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+             <tr>
+                <td>1/15/FET/BCC/1/066</td>
+                <td><p id="std_name">Shivani Singh</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="six_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="six_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+             <tr>
+                <td>1/15/FET/BCC/1/067</td>
+                <td><p id="std_name">Akshay Chugh</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="seven_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="seven_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+     <tr>
+                <td>1/15/FET/BCC/1/068</td>
+                <td><p id="std_name">Chandan Bateja</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="eight_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="eight_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+     <tr>
+                <td>1/15/FET/BCC/1/069</td>
+                <td><p id="std_name">Kumar Rithvik</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="nine_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="nine_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+     <tr>
+                <td>1/15/FET/BCC/1/070</td>
+                <td><p id="std_name">Gagan Yadav</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="ten_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="ten_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+             <tr>
+                <td>1/15/FET/BCC/1/071</td>
+                <td><p id="std_name">Princi Sharma</p></td>
+
+                <td><label class="radio-inline">
+      <input type="radio" name="one1_radio" value="Present">Present
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="one1_radio" value="Absent">Absent
+    </label></td>
+
+            </tr>
+
+        </tbody>
+</table>
+
+<button type="submit" class="btn-lg btn-round btn-success" id="submit">Submit</button>
+</form>
+</div>
+{% endblock %}
